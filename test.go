@@ -1,7 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
-	a := []int{1, 2, 3}
-	i, ok := a[3]
-	println(i, ok)
+	s := "hello world"
+	for k, v := range s {
+		fmt.Println(k, v)
+	}
 }
