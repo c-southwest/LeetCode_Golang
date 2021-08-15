@@ -1,10 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	s := "hello world"
-	for k, v := range s {
-		fmt.Println(k, v)
-	}
+	s := "  hello world  "
+	fmt.Println(strings.Trim(s, " "))
 }
