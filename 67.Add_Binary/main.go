@@ -66,8 +66,8 @@ func addBinary(a string, b string) string {
 				}
 			}
 			if flag == 1 && i == len(a) {
-				result = append([]rune{'1'}, result...)
-
+				//result = append([]rune{'1'}, result...)
+				return "1" + string(result)
 			}
 
 		}
@@ -126,8 +126,8 @@ func addBinary(a string, b string) string {
 				}
 			}
 			if flag == 1 && i == len(b) {
-				result = append([]rune{'1'}, result...)
-
+				//result = append([]rune{'1'}, result...)
+				return "1" + string(result)
 			}
 
 		}
